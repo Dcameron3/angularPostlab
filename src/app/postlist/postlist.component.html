@@ -1,0 +1,8 @@
+<p>postlist works!</p>
+
+<ng-container *ngFor="let mypost of myposts">
+    <app-post [thepost]="mypost"></app-post>
+</ng-container>
+Title: <input type="text" [(ngModel)]="theTitle" /><br />
+Thought: <input type="text"[(ngModel)]="theThought" /><br />
+<button (click)="add()">Add</button>
